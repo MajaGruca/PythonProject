@@ -36,7 +36,7 @@ class GameWindow(arcade.Window):
         self.block_list = arcade.SpriteList()
         self.mouse = [0,0]
         self.current_state = MENU
-        self.level = 4
+        self.level = 0
         self.HP = 100
         self.life = 3
         self.score = 0
@@ -152,7 +152,7 @@ class GameWindow(arcade.Window):
         arcade.draw_text(output, 10, 580, arcade.color.WHITE, 20,font_name='Walk Around the Block')
         output = "Points: {}".format(self.score)
         arcade.draw_text(output, 10, 10, arcade.color.WHITE, 25,font_name='Walk Around the Block')
-        output = "Lifes: {}".format(self.life)
+        output = "Lives: {}".format(self.life)
         arcade.draw_text(output, 330, 10, arcade.color.WHITE, 25,font_name='Walk Around the Block')
         output = "HP: {}".format(self.HP)
         arcade.draw_text(output, 650, 10, arcade.color.WHITE, 25,font_name='Walk Around the Block')
